@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sport Style - Estilo y Rendimiento</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Oswald', sans-serif; background-color: #000; color: #fff; line-height: 1.6; }
+        .navbar { background-color: #000; padding: 1rem 0; border-bottom: 2px solid #4CAF50; }
+        .nav-container { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 20px; }
+        .logo { color: #4CAF50; font-size: 2rem; font-weight: 700; }
+        .nav-menu { display: flex; list-style: none; }
+        .nav-menu li { margin-left: 2rem; }
+        .nav-menu a { color: #fff; text-decoration: none; font-size: 1.2rem; transition: color 0.3s; }
+        .nav-menu a:hover { color: #4CAF50; }
+        .hero { background-color: #111; text-align: center; padding: 4rem 20px; border-bottom: 3px solid #4CAF50; }
+        .hero h2 { font-size: 2rem; max-width: 800px; margin: 0 auto; }
+        .section { max-width: 1200px; margin: 2rem auto; padding: 0 20px; }
+        .section h2 { color: #4CAF50; font-size: 2.5rem; margin-bottom: 1rem; text-align: center; }
+        .section p { font-size: 1.1rem; margin-bottom: 1rem; }
+        .productos-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 2rem; }
+        .producto-card { background-color: #111; padding: 1.5rem; border-radius: 10px; border: 1px solid #4CAF50; text-align: center; }
+        @media (max-width: 768px) { .nav-menu { flex-direction: column; gap: 1rem; } .hero h2 { font-size: 1.5rem; } }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">Sport Style</h1>
+            <ul class="nav-menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h2>Estilo y rendimiento en cada movimiento. Ropa Sport Style premium para tu vida activa.</h2>
+    </header>
+
+    <section id="inicio" class="section">
+        <h2>Sobre Sport Style</h2>
+        <p>Sport Style es tu destino para ropa Sport Style de alta calidad. Inspirados en el mundo del fitness y el estilo urbano, ofrecemos prendas cómodas, duraderas y con diseño moderno.</p>
+    </section>
+
+    <section id="productos" class="section">
+        <h2>Nuestros Productos</h2>
+        <div class="productos-grid">
+            <div class="producto-card">
+                <img src="camiseta1.jpg" alt="Camiseta Fitness Sport Style">
+                <h3>Camiseta Fitness Sport Style</h3>
+                <p>Camiseta ergonómica con tecnología dry-fit para entrenamientos intensos. Precio: $35.99</p>
+            </div>
+            <div class="producto-card">
+                <img src="pantalon1.jpg" alt="Shorts Running Sport Style">
+                <h3>Shorts Running Sport Style</h3>
+                <p>Shorts ligeros con malla para ventilación, ideales para correr. Precio: $28.50</p>
+            </div>
+            <div class="producto-card">
+                <img src="zapatillas1.jpg" alt="Zapatillas CrossFit Sport Style">
+                <h3>Zapatillas CrossFit Sport Style</h3>
+                <p>Zapatillas con suela antideslizante y soporte para gym y crossfit. Precio: $79.99</p>
+            </div>
+            <div class="producto-card">
+                <img src="sudadera1.jpg" alt="Sudadera Hoodie Sport Style">
+                <h3>Sudadera Hoodie Sport Style</h3>
+                <p>Sudadera oversize con capucha, perfecta para post-entrenamiento. Precio: $49.00</p>
+            </div>
+            <div class="producto-card">
+                <img src="leggings1.jpg" alt="Leggings Yoga Sport Style">
+                <h3>Leggings Yoga Sport Style</h3>
+                <p>Leggings compresivos con alto contenido de elastano para yoga y pilates. Precio: $42.99</p>
+            </div>
+            <div class="producto-card">
+                <img src="shortcalza1.jpg" alt="Short con Calza Dama HLM">
+                <h3>Short con Calza Dama HLM</h3>
+                <p>Tela del short: Poliéster. Tela de la calza: Lycra. 2 Bolsillos laterales. Cintura elástica. Precio: $34.99</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="section">
+        <h2>Contacto</h2>
+        <p>Envíanos un mensaje a <a href="mailto:stylesport71@gmail.com" style="color: #4CAF50;">stylesport71@gmail.com</a><br>
+        Tel. <a href="tel:+5493462562570" style="color: #4CAF50;">549 3462-562570</a><br>
+        Síguenos en Instagram <a href="https://instagram.com/sport.style71" style="color: #4CAF50;" target="_blank">@sport.style71</a>.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Sport Style. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
