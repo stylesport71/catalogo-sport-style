@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -6,124 +6,23 @@
     <title>Sport Style - Estilo y Rendimiento</title>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
-        /* Estilos CSS (todo en uno) */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Oswald', sans-serif;
-            background-color: #000;
-            color: #fff;
-            line-height: 1.6;
-        }
-
-        /* Menú de Navegación */
-        .navbar {
-            background-color: #000;
-            padding: 1rem 0;
-            border-bottom: 2px solid #4CAF50;
-        }
-
-        .nav-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 20px;
-        }
-
-        .logo {
-            color: #4CAF50;
-            font-size: 2rem;
-            font-weight: 700;
-        }
-
-        .nav-menu {
-            display: flex;
-            list-style: none;
-        }
-
-        .nav-menu li {
-            margin-left: 2rem;
-        }
-
-        .nav-menu a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 1.2rem;
-            transition: color 0.3s;
-        }
-
-        .nav-menu a:hover {
-            color: #4CAF50;
-        }
-
-        /* Encabezado Hero */
-        .hero {
-            background-color: #111;
-            text-align: center;
-            padding: 4rem 20px;
-            border-bottom: 3px solid #4CAF50;
-        }
-
-        .hero h2 {
-            font-size: 2rem;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        /* Secciones generales */
-        .section {
-            max-width: 1200px;
-            margin: 2rem auto;
-            padding: 0 20px;
-        }
-
-        .section h2 {
-            color: #4CAF50;
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            text-align: center;
-        }
-
-        .section p {
-            font-size: 1.1rem;
-            margin-bottom: 1rem;
-        }
-
-        /* Grid de Productos */
-        .productos-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-
-        .producto-card {
-            background-color: #111;
-            padding: 1.5rem;
-            border-radius: 10px;
-            border: 1px solid #4CAF50;
-            text-align: center;
-        }
-
-        .admin-only {
-            display: none;
-        }
-
-        @media (max-width: 768px) {
-            .nav-menu {
-                flex-direction: column;
-                gap: 1rem;
-            }
-            .hero h2 {
-                font-size: 1.5rem;
-            }
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Oswald', sans-serif; background-color: #000; color: #fff; line-height: 1.6; }
+        .navbar { background-color: #000; padding: 1rem 0; border-bottom: 2px solid #4CAF50; }
+        .nav-container { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 20px; }
+        .logo { color: #4CAF50; font-size: 2rem; font-weight: 700; }
+        .nav-menu { display: flex; list-style: none; }
+        .nav-menu li { margin-left: 2rem; }
+        .nav-menu a { color: #fff; text-decoration: none; font-size: 1.2rem; transition: color 0.3s; }
+        .nav-menu a:hover { color: #4CAF50; }
+        .hero { background-color: #111; text-align: center; padding: 4rem 20px; border-bottom: 3px solid #4CAF50; }
+        .hero h2 { font-size: 2rem; max-width: 800px; margin: 0 auto; }
+        .section { max-width: 1200px; margin: 2rem auto; padding: 0 20px; }
+        .section h2 { color: #4CAF50; font-size: 2.5rem; margin-bottom: 1rem; text-align: center; }
+        .section p { font-size: 1.1rem; margin-bottom: 1rem; }
+        .productos-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 2rem; }
+        .producto-card { background-color: #111; padding: 1.5rem; border-radius: 10px; border: 1px solid #4CAF50; text-align: center; }
+        @media (max-width: 768px) { .nav-menu { flex-direction: column; gap: 1rem; } .hero h2 { font-size: 1.5rem; } }
     </style>
 </head>
 <body>
@@ -133,7 +32,6 @@
             <ul class="nav-menu">
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#productos">Productos</a></li>
-                <li id="admin-link" class="admin-only"><a href="#agregar">Agregar Producto</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </div>
@@ -145,181 +43,54 @@
 
     <section id="inicio" class="section">
         <h2>Sobre Sport Style</h2>
-        <p>Sport Style es tu destino para ropa Sport Style de alta calidad. Inspirados en el mundo del fitness y el estilo urbano, ofrecemos prendas cómodas, duraderas y con diseño moderno. Desde camisetas transpirables hasta zapatillas de alto impacto, todo para que luzcas y te sientas increíble. ¡Síguenos en Instagram para tips y novedades!</p>
+        <p>Sport Style es tu destino para ropa Sport Style de alta calidad. Inspirados en el mundo del fitness y el estilo urbano, ofrecemos prendas cómodas, duraderas y con diseño moderno.</p>
     </section>
 
     <section id="productos" class="section">
         <h2>Nuestros Productos</h2>
-        <div id="productos-lista" class="productos-grid"></div>
-    </section>
-
-    <section id="agregar" class="admin-only section">
-        <h2>Agregar Nuevo Producto (Admin)</h2>
-        <form id="form-producto">
-            <input type="text" id="nombre-producto" placeholder="Nombre del producto" required>
-            <textarea id="descripcion-producto" placeholder="Descripción detallada" required></textarea>
-            <input type="number" id="precio-producto" placeholder="Precio" step="0.01" required>
-            <input type="file" id="imagen-producto" accept="image/*">
-            <button type="submit">Agregar Producto</button>
-            <button type="button" onclick="limpiarForm()">Limpiar</button>
-        </form>
+        <div class="productos-grid">
+            <div class="producto-card">
+                <img src="camiseta1.jpg" alt="Camiseta Fitness Sport Style">
+                <h3>Camiseta Fitness Sport Style</h3>
+                <p>Camiseta ergonómica con tecnología dry-fit para entrenamientos intensos. Precio: $35.99</p>
+            </div>
+            <div class="producto-card">
+                <img src="pantalon1.jpg" alt="Shorts Running Sport Style">
+                <h3>Shorts Running Sport Style</h3>
+                <p>Shorts ligeros con malla para ventilación, ideales para correr. Precio: $28.50</p>
+            </div>
+            <div class="producto-card">
+                <img src="zapatillas1.jpg" alt="Zapatillas CrossFit Sport Style">
+                <h3>Zapatillas CrossFit Sport Style</h3>
+                <p>Zapatillas con suela antideslizante y soporte para gym y crossfit. Precio: $79.99</p>
+            </div>
+            <div class="producto-card">
+                <img src="sudadera1.jpg" alt="Sudadera Hoodie Sport Style">
+                <h3>Sudadera Hoodie Sport Style</h3>
+                <p>Sudadera oversize con capucha, perfecta para post-entrenamiento. Precio: $49.00</p>
+            </div>
+            <div class="producto-card">
+                <img src="leggings1.jpg" alt="Leggings Yoga Sport Style">
+                <h3>Leggings Yoga Sport Style</h3>
+                <p>Leggings compresivos con alto contenido de elastano para yoga y pilates. Precio: $42.99</p>
+            </div>
+            <div class="producto-card">
+                <img src="shortcalza1.jpg" alt="Short con Calza Dama HLM">
+                <h3>Short con Calza Dama HLM</h3>
+                <p>Tela del short: Poliéster. Tela de la calza: Lycra. 2 Bolsillos laterales. Cintura elástica. Precio: $34.99</p>
+            </div>
+        </div>
     </section>
 
     <section id="contacto" class="section">
         <h2>Contacto</h2>
         <p>Envíanos un mensaje a <a href="mailto:stylesport71@gmail.com" style="color: #4CAF50;">stylesport71@gmail.com</a><br>
-        Tel. (incluyendo celular) <a href="tel:+5493462562570" style="color: #4CAF50;">549 3462-562570</a><br>
+        Tel. <a href="tel:+5493462562570" style="color: #4CAF50;">549 3462-562570</a><br>
         Síguenos en Instagram <a href="https://instagram.com/sport.style71" style="color: #4CAF50;" target="_blank">@sport.style71</a>.</p>
     </section>
 
     <footer>
         <p>&copy; 2023 Sport Style. Todos los derechos reservados.</p>
     </footer>
-
-    <script>
-        console.log('Script cargado correctamente');
-        const urlParams = new URLSearchParams(window.location.search);
-        const isAdmin = urlParams.get('admin') === 'true';
-        console.log('Modo admin:', isAdmin);
-        if (isAdmin) {
-            document.querySelectorAll('.admin-only').forEach(el => el.style.display = 'block');
-        }
-
-        let productos = JSON.parse(localStorage.getItem('productos')) || [
-            {id: 1, nombre: 'Camiseta Fitness Sport Style', descripcion: 'Camiseta ergonómica con tecnología dry-fit para entrenamientos intensos.', precio: 35.99, imagen: null},
-            {id: 2, nombre: 'Shorts Running Sport Style', descripcion: 'Shorts ligeros con malla para ventilación, ideales para correr.', precio: 28.50, imagen: null},
-            {id: 3, nombre: 'Zapatillas CrossFit Sport Style', descripcion: 'Zapatillas con suela antideslizante y soporte para gym y crossfit.', precio: 79.99, imagen: null},
-            {id: 4, nombre: 'Sudadera Hoodie Sport Style', descripcion: 'Sudadera oversize con capucha, perfecta para post-entrenamiento.', precio: 49.00, imagen: null},
-            {id: 5, nombre: 'Leggings Yoga Sport Style', descripcion: 'Leggings compresivos con alto contenido de elastano para yoga y pilates.', precio: 42.99, imagen: null},
-            {id: 6, nombre: 'Short con Calza Dama HLM', descripcion: 'Tela del short: Poliéster ofreciendo el mejor confort. Tela de la calza: Lycra, excelente calidad. 2 Bolsillos laterales. Cintura elástica. Ideales para todo tipo de entrenamiento.', precio: 34.99, imagen: null}
-        ];
-
-        function cargarProductos() {
-            console.log('Cargando productos');
-            const lista = document.getElementById('productos-lista');
-            lista.innerHTML = '';
-            productos.forEach(producto => {
-                const card = document.createElement('div');
-                card.classList.add('producto-card');
-                let adminButtons = '';
-                if (isAdmin) {
-                    adminButtons = `
-                        <button class="btn btn-editar">Editar</button>
-                        <button class="btn btn-eliminar">Eliminar</button>
-                        <button class="btn btn-ver-mas">Ver Más</button>
-                    `;
-                }
-                let imagenHtml = producto.imagen ? `<img src="${producto.imagen}" alt="${producto.nombre}" class="producto-imagen">` : '<div class="placeholder-imagen">Imagen no disponible</div>';
-                card.innerHTML = `
-                    ${imagenHtml}
-                    <h3>${producto.nombre}</h3>
-                    <p>${producto.descripcion}</p>
-                    <p class="precio">$${producto.precio.toFixed(2)}</p>
-                    ${adminButtons}
-                `;
-                lista.appendChild(card);
-
-                if (isAdmin) {
-                    const editarBtn = card.querySelector('.btn-editar');
-                    if (editarBtn) editarBtn.addEventListener('click', () => {
-                        console.log('Click en Editar para ID:', producto.id);
-                        editarProducto(producto.id);
-                    });
-                    const eliminarBtn = card.querySelector('.btn-eliminar');
-                    if (eliminarBtn) eliminarBtn.addEventListener('click', () => {
-                        console.log('Click en Eliminar para ID:', producto.id);
-                        eliminarProducto(producto.id);
-                    });
-                    const verMasBtn = card.querySelector('.btn-ver-mas');
-                    if (verMasBtn) verMasBtn.addEventListener('click', () => {
-                        console.log('Click en Ver Más para ID:', producto.id);
-                        verMas(producto.id);
-                    });
-                }
-            });
-            localStorage.setItem('productos', JSON.stringify(productos));
-        }
-
-        document.getElementById('form-producto')?.addEventListener('submit', function(e) {
-            console.log('Formulario enviado para agregar producto');
-            e.preventDefault();
-            const nombre = document.getElementById('nombre-producto').value;
-            const descripcion = document.getElementById('descripcion-producto').value;
-            const precio = parseFloat(document.getElementById('precio-producto').value);
-            const fileInput = document.getElementById('imagen-producto');
-            let imagen = null;
-            if (fileInput.files && fileInput.files[0]) {
-                const reader = new FileReader();
-                reader.onload = function(e) {
-                    imagen = e.target.result;
-                    const nuevoProducto = {id: Date.now(), nombre, descripcion, precio, imagen};
-                    productos.push(nuevoProducto);
-                    cargarProductos();
-                    alert('Producto agregado!');
-                };
-                reader.onerror = function(error) {
-                    console.error('Error al leer la imagen:', error);
-                    alert('Error al agregar la imagen. Intenta de nuevo.');
-                };
-                reader.readAsDataURL(fileInput.files[0]);
-            } else {
-                const nuevoProducto = {id: Date.now(), nombre, descripcion, precio, imagen};
-                productos.push(nuevoProducto);
-                cargarProductos();
-                alert('Producto agregado!');
-            }
-            this.reset();
-        });
-
-        function limpiarForm() {
-            console.log('Limpiando formulario');
-            document.getElementById('form-producto').reset();
-        }
-
-        function editarProducto(id) {
-            console.log('Editando producto ID:', id);
-            const producto = productos.find(p => p.id === id);
-            if (producto) {
-                const nuevoNombre = prompt('Nuevo nombre:', producto.nombre);
-                const nuevaDescripcion = prompt('Nueva descripción:', producto.descripcion);
-                const nuevoPrecio = prompt('Nuevo precio:', producto.precio);
-                if (nuevoNombre && nuevaDescripcion && nuevoPrecio !== null) {
-                    producto.nombre = nuevoNombre;
-                    producto.descripcion = nuevaDescripcion;
-                    producto.precio = parseFloat(nuevoPrecio);
-                    cargarProductos();
-                    alert('Producto editado!');
-                }
-            } else {
-                console.log('Producto no encontrado');
-                alert('Error: Producto no encontrado.');
-            }
-        }
-
-        function eliminarProducto(id) {
-            console.log('Eliminando producto ID:', id);
-            if (confirm('¿Eliminar este producto?')) {
-                productos = productos.filter(p => p.id !== id);
-                cargarProductos();
-                alert('Producto eliminado!');
-            }
-        }
-
-        function verMas(id) {
-            console.log('Ver más para ID:', id);
-            const producto = productos.find(p => p.id === id);
-            if (producto) {
-                alert(`Detalles: ${producto.descripcion}`);
-            } else {
-                console.log('Producto no encontrado para ver más');
-                alert('Error: Producto no encontrado.');
-            }
-        }
-
-        document.addEventListener('DOMContentLoaded', function() {
-            console.log('Página cargada y listo para cargar productos');
-            cargarProductos();
-        });
-    </script>
 </body>
 </html>
